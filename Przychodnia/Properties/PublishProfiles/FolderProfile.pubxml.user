@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\filip\Desktop\praca magisterska\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DbConnection">
+      <Value>Host=localhost%3bPort=5432%3bUsername=dbuser%3bPassword=Admin%3bDatabase=Database%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
