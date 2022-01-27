@@ -1,14 +1,16 @@
 # Deploy
 
-Strona pod którą można zobaczyć projekt [Clinic](http://vps-63e72677.vps.ovh.net).\
-http://vps-63e72677.vps.ovh.net
+Strona pod którą można zobaczyć projekt https://clinic-registration.herokuapp.com/
+
+Pierwsze załadowanie aplikacji trwa chwilę ze względu że aplikacja jest na darmowym hostingu i jest wyłączona, włącza się dopiero gdy ktoś próbuje wejść na stronę aplikacji.\
+Tak samo jest też z backendem, więc pierwsze logowanie także trwa trochę dłużej.
+
 
 ## Konta użytkowników
 
-
-Lekarz: `lekarz@email.pl`, hasło: `Haslo123.`,\
-pacjent: `pacjent@email.pl` hasło: `Haslo123.`,\
-admina login: `admin@email.pl`  hasło: `Haslo123.`
+Lekarz: `lekarz@email.pl`, hasło: `Haslo123.`\
+pacjent: `pacjent@email.pl` hasło: `Haslo123.`\
+admina login: `admin@email.pl` hasło: `Haslo123.`
 
 ## Instrukcja
 
@@ -18,18 +20,16 @@ Wyszukiwarka umożliwia filtrowanie po wszystkich właściwościach użytkownik�
 Z listy użytkowników moża edytować dane użytkownika, edytować role.\
 W aplikacji są wbudowane trzy role: admin, user, doctor. Odpowiadają one typom kont.\
 Do konta z rolą `doctor` należy także przypisać specjalizacje pod którymi będzie można planować wizyty.\
-Specjalizacje lekarskie są także rolami które `admin` może tworzyć lub usuwać jeżeli żaden użytkownik nie ma przypisanej danej specjalizacji. 
-
+Specjalizacje lekarskie są także rolami które `admin` może tworzyć lub usuwać jeżeli żaden użytkownik nie ma przypisanej danej specjalizacji.
 
 ### `doctor`- Lekarz, Panel Lekarza
 
 Lekarz ma podgląd swoich wizyt w danym tygodniu i możliwość przełączania się między tygodniami.\
 Nowe wizyty dodaje się formularzem pod wybranym dniem, gdzie należy ustawić godzinę i wybrać specjalizację pod którą ma być wizyta. po zakończeniu dodawania nowych wizyt należy zapisać je w bazie danych przyciskiem `Zapisz nowe wizyty`.\
 W wizycie na którą ktoś się zarejestrował można przejść do szczegółów, w modalu który się wyświetli można: wystawić recepte, przesłać wyniki badań lub wysyłać wiadomości do pacjenta.
-Istnieje możliwość odwołania lub zakończenia wizyty, w tym momencie zmiana ta ma charakter informacyjny nie niesie za sobą innych następstw niż wyświetlanie odpowiednio w historii wizyt lub  liście zaplanowanych wizyt na koncie pacjenta.\
+Istnieje możliwość odwołania lub zakończenia wizyty, w tym momencie zmiana ta ma charakter informacyjny nie niesie za sobą innych następstw niż wyświetlanie odpowiednio w historii wizyt lub liście zaplanowanych wizyt na koncie pacjenta.\
 \
 Tworzenie wizyt w przeszłym terminie celowo nie zostało ogarniczone do ułatwienia testowania funkcjonalności.
-
 
 ### `user`- Pacjent
 
@@ -48,7 +48,6 @@ Można wypisać się z zarezerwowanej wizyty przyciskiem `anuluj rezerwację` w 
 #### Historia wizyt
 
 Lista zakończonych lub anulowanych przez lekarza wizyt, ze szczegółów wizyty można odczytać dane lekarza, recepty, wyniki badań, a także pisać wiadomości do lekarza.
-
 
 ## Rejestracja konta
 
